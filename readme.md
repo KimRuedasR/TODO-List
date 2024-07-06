@@ -1,4 +1,4 @@
-# ✅ Mi Lista de Tareas ✅
+# ✅ Lista de Tareas ✅
 
 ## 📝 Descripción
 
@@ -19,13 +19,13 @@ git clone https://github.com/KimRuedasR/TODO-List.git
 ### 2️⃣ Instalar Dependencias
 
 ```bash
-npm start
+npm install
 ```
 
 ### 3️⃣ Iniciar el Servidor
 
-- ```bash
-npm install
+```bash
+npm start
 ```
 
 ### 4️⃣ Probar
