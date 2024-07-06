@@ -7,6 +7,7 @@ Aplicación sencilla de una lista de tareas "TODO List" utilizando Node.js y Exp
 ## 🛠 Requisitos
 
 Node.js
+Node Packet Manager NPM
 
 ## 🚀 Configuración
 
@@ -30,7 +31,7 @@ npm start
 
 ### 4️⃣ Probar
 
-Ir a http://localhost:8080 en el navegador para ver la aplicación de lista de tareas.
+Ir a http://localhost:8080 en el navegador para ver la aplicación con la lista de tareas.
 
 ## 🌐 Interfaz
 
@@ -44,7 +45,6 @@ Funcionalidades
 - Eliminar una tarea.
 
 ## 🛣 Endpoints
-Rutas de la API
 
 - (GET) /api/tasks: Obtener todas las tareas.
 - (POST) /api/tasks: Crear una nueva tarea.
