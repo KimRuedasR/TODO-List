@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lista de Tareas</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 16 16%22><text y=%2214%22 font-size=%2216%22>✅</text></svg>">
+</head>
+<body>
+    <div class="container">
+        <h1>Lista de Tareas</h1>
+        <div class="task-input">
+            <input type="text" id="task-title" placeholder="Título de la tarea">
+            <textarea id="task-desc" placeholder="Descripción de la tarea" rows="4"></textarea>
+            <button id="add-task-btn">Agregar Tarea</button>
+            <button id="cancel-edit-btn" style="display: none;">Cancelar</button>
+        </div>
+        <div class="table-container">
+            <table id="task-table">
+                <thead>
+                    <tr>
+                        <th>Título</th>
+                        <th>Descripción</th>
+                        <th>Estado</th>
+                        <th>Acciones</th>
+                    </tr>
+                </thead>
+                <tbody id="task-list">
+                    <!-- Las tareas se agregan dinámicamente -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,184 @@
+/* Cuerpo de la página */
+body {
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    background-color: #e9ecef;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    height: 100vh;
+    overflow: auto;
+}
+
+/* Contenedor principal */
+.container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 12px;
+    box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
+    width: 800px;
+    border: 1px solid #ccc;
+}
+
+/* Título */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    font-size: 24px;
+    color: #333;
+}
+
+/* Formulario de tareas */
+.task-input {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    margin-bottom: 20px;
+    background-color: #fff;
+    padding: 20px;
+    z-index: 1000;
+    border-bottom: 1px solid #ddd;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+}
+
+.task-input input, .task-input textarea {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+}
+
+.task-input textarea {
+    resize: vertical;
+}
+
+.task-input button {
+    padding: 10px;
+    background-color: #007aff;
+    color: #fff;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+.task-input button:hover {
+    background-color: #005bb5;
+}
+
+#add-task-btn.edit-mode {
+    background-color: #800080;
+}
+
+#add-task-btn.edit-mode:hover {
+    background-color: #660066;
+}
+
+#cancel-edit-btn {
+    background-color: #ff4d4d;
+}
+
+#cancel-edit-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Tabla de tareas */
+.table-container {
+    padding-top: 20px;
+    overflow: auto;
+}
+
+#task-table {
+    width: 100%;
+    border-collapse: collapse;
+    table-layout: fixed;
+}
+
+#task-table th, #task-table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+    font-size: 16px;
+    word-wrap: break-word;
+}
+
+#task-table th {
+    background-color: #f8f8f8;
+    font-weight: bold;
+}
+
+#task-table td:nth-child(3) {
+    text-align: center;
+}
+
+/* Tareas completadas */
+.completed {
+    text-decoration: line-through;
+    color: #888;
+}
+
+/* Botones de acciones */
+.action-btn {
+    padding: 8px 12px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    font-size: 14px;
+    color: #fff;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 5px;
+    justify-content: center;
+}
+
+.edit-btn {
+    background-color: #800080;
+}
+
+.edit-btn:hover {
+    background-color: #660066;
+}
+
+.delete-btn {
+    background-color: #ff4d4d;
+}
+
+.delete-btn:hover {
+    background-color: #cc0000;
+}
+
+/* Checkbox animado */
+.status-checkbox {
+    position: relative;
+    width: 20px;
+    height: 20px;
+    appearance: none;
+    background-color: #fff;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    outline: none;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.status-checkbox:checked {
+    background-color: #4caf50;
+    border-color: #4caf50;
+}
+
+.status-checkbox:checked::before {
+    content: '✅';
+    position: absolute;
+    top: -4px;
+    left: -2px;
+    font-size: 18px;
+    color: #fff;
+}
